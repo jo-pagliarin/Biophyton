@@ -1,0 +1,4 @@
+sequenciaDNA = "agtagtcatccagtcatcatgggccaac"
+sequenciaRNA = "ucaucaguaggucaguaguacccgguug"
+
+

@@ -78,27 +78,28 @@ string = insulin_signal.replace("DPAAA", "LLALL")
 print(string)
 
 # EX 04
-
 dna = 'GATGGAACTTGACGTAAACCTATATT'
 rna = ''
 
-## NÃO DEU CERTO 
-def criaRNA():
-    for i in range(len(dna)-1):
+def criaRNA(dna, rna):
+    for i in range(len(dna)):
         if dna[i] == 'G':
-            rna.ljust(len(dna), 'C')
-                    
+            rna = rna + ''.ljust(1, 'C')
+
         elif dna[i] == 'C':
-            rna.ljust(len(dna), 'G')
-            
+            rna = rna + ''.ljust(1, 'G')
+    
         elif dna[i] == 'A':
-            rna.ljust(len(dna), 'U')
+            rna = rna + ''.ljust(1, 'U')
             
         else:
-            rna.ljust(len(dna), 'A')
+            rna = rna + ''.ljust(1, 'A')
     return(rna) 
-            
-# print(criaRNA())
+
+rna = criaRNA(dna, rna)
+print(rna)
+print(len(dna) == len(rna))
+print(type(rna))
       
       
 

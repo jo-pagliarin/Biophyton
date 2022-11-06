@@ -15,3 +15,4 @@ aluno3 = aluno("matheus", 4, 2, "não encontrado")
 
 print(aluno1.situacao)
 print(aluno3.situacao)
+
