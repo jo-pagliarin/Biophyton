@@ -85,18 +85,16 @@ def criaRNA(dna, rna):
     for i in range(len(dna)):
         if dna[i] == 'G':
             rna = rna + ''.ljust(1, 'C')
-
         elif dna[i] == 'C':
             rna = rna + ''.ljust(1, 'G')
-    
         elif dna[i] == 'A':
             rna = rna + ''.ljust(1, 'U')
-            
         else:
             rna = rna + ''.ljust(1, 'A')
     return(rna) 
 
 rna = criaRNA(dna, rna)
+print(dna)
 print(rna)
 print(len(dna) == len(rna))
 print(type(rna))
