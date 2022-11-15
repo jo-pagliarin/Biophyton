@@ -99,7 +99,18 @@ print(rna)
 print(len(dna) == len(rna))
 print(type(rna))
       
-      
+# exemplo de função com número indefinido de parâmetros  
+strTeste = ["amor" , "laranja" , "banana", "garrafa"]
+def buscaPalavra(*palavras):
+    for palavra in palavras:
+        num =  strTeste.index(palavra)
+        try:
+            float(num)
+            print(f'Achei a palavra na posição {num} do vetor, portanto, elemento número {num+1}')
+        except ValueError:
+            return
+            
+buscaPalavra("uva", "laranja", "garrafa")  
 
 
 

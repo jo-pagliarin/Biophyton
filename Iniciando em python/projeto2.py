@@ -1,4 +1,0 @@
-sequenciaDNA = "agtagtcatccagtcatcatgggccaac"
-sequenciaRNA = "ucaucaguaggucaguaguacccgguug"
-
-
